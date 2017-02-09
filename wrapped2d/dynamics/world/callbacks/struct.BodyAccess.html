@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `BodyAccess` struct in crate `wrapped2d`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, BodyAccess">
+
+    <title>wrapped2d::dynamics::world::callbacks::BodyAccess - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../../../index.html'>wrapped2d</a>::<wbr><a href='../../index.html'>dynamics</a>::<wbr><a href='../index.html'>world</a>::<wbr><a href='index.html'>callbacks</a></p><script>window.sidebarCurrent = {name: 'BodyAccess', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../index.html'>wrapped2d</a>::<wbr><a href='../../index.html'>dynamics</a>::<wbr><a href='../index.html'>world</a>::<wbr><a href='index.html'>callbacks</a>::<wbr><a class='struct' href=''>BodyAccess</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../src/wrapped2d/dynamics/world_callbacks.rs.html#225' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct BodyAccess&lt;'a, U:&nbsp;<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>UserDataTypes</a>&gt;(_, _);</pre><h2 id='deref-methods'>Methods from <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html' title='core::ops::Deref'>Deref</a>&lt;Target=<a class='struct' href='../../../../wrapped2d/dynamics/body/struct.Body.html' title='wrapped2d::dynamics::body::Body'>Body</a>&gt;</h2><div class='impl-items'><h4 id='method.handle' class='method'><span id='handle.v' class='invisible'><code>fn <a href='#method.handle' class='fnname'>handle</a>(&amp;self) -&gt; <a class='type' href='../../../../wrapped2d/dynamics/world/type.BodyHandle.html' title='wrapped2d::dynamics::world::BodyHandle'>BodyHandle</a></code></span></h4>
+<h4 id='method.transform' class='method'><span id='transform.v' class='invisible'><code>fn <a href='#method.transform' class='fnname'>transform</a>&lt;'a&gt;(&amp;'a self) -&gt; &amp;'a <a class='struct' href='../../../../wrapped2d/common/math/struct.Transform.html' title='wrapped2d::common::math::Transform'>Transform</a></code></span></h4>
+<h4 id='method.position' class='method'><span id='position.v' class='invisible'><code>fn <a href='#method.position' class='fnname'>position</a>&lt;'a&gt;(&amp;'a self) -&gt; &amp;'a <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.angle' class='method'><span id='angle.v' class='invisible'><code>fn <a href='#method.angle' class='fnname'>angle</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.world_center' class='method'><span id='world_center.v' class='invisible'><code>fn <a href='#method.world_center' class='fnname'>world_center</a>&lt;'a&gt;(&amp;'a self) -&gt; &amp;'a <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.local_center' class='method'><span id='local_center.v' class='invisible'><code>fn <a href='#method.local_center' class='fnname'>local_center</a>&lt;'a&gt;(&amp;'a self) -&gt; &amp;'a <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.linear_velocity' class='method'><span id='linear_velocity.v' class='invisible'><code>fn <a href='#method.linear_velocity' class='fnname'>linear_velocity</a>&lt;'a&gt;(&amp;'a self) -&gt; &amp;'a <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.angular_velocity' class='method'><span id='angular_velocity.v' class='invisible'><code>fn <a href='#method.angular_velocity' class='fnname'>angular_velocity</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.mass' class='method'><span id='mass.v' class='invisible'><code>fn <a href='#method.mass' class='fnname'>mass</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.inertia' class='method'><span id='inertia.v' class='invisible'><code>fn <a href='#method.inertia' class='fnname'>inertia</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.mass_data' class='method'><span id='mass_data.v' class='invisible'><code>fn <a href='#method.mass_data' class='fnname'>mass_data</a>(&amp;self) -&gt; <a class='struct' href='../../../../wrapped2d/collision/shapes/struct.MassData.html' title='wrapped2d::collision::shapes::MassData'>MassData</a></code></span></h4>
+<h4 id='method.world_point' class='method'><span id='world_point.v' class='invisible'><code>fn <a href='#method.world_point' class='fnname'>world_point</a>(&amp;self, local: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.world_vector' class='method'><span id='world_vector.v' class='invisible'><code>fn <a href='#method.world_vector' class='fnname'>world_vector</a>(&amp;self, local: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.local_point' class='method'><span id='local_point.v' class='invisible'><code>fn <a href='#method.local_point' class='fnname'>local_point</a>(&amp;self, world: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.local_vector' class='method'><span id='local_vector.v' class='invisible'><code>fn <a href='#method.local_vector' class='fnname'>local_vector</a>(&amp;self, world: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.linear_velocity_from_world_point' class='method'><span id='linear_velocity_from_world_point.v' class='invisible'><code>fn <a href='#method.linear_velocity_from_world_point' class='fnname'>linear_velocity_from_world_point</a>(&amp;self, world: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.linear_velocity_from_local_point' class='method'><span id='linear_velocity_from_local_point.v' class='invisible'><code>fn <a href='#method.linear_velocity_from_local_point' class='fnname'>linear_velocity_from_local_point</a>(&amp;self, local: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>) -&gt; <a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a></code></span></h4>
+<h4 id='method.linear_damping' class='method'><span id='linear_damping.v' class='invisible'><code>fn <a href='#method.linear_damping' class='fnname'>linear_damping</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.angular_damping' class='method'><span id='angular_damping.v' class='invisible'><code>fn <a href='#method.angular_damping' class='fnname'>angular_damping</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.gravity_scale' class='method'><span id='gravity_scale.v' class='invisible'><code>fn <a href='#method.gravity_scale' class='fnname'>gravity_scale</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></span></h4>
+<h4 id='method.body_type' class='method'><span id='body_type.v' class='invisible'><code>fn <a href='#method.body_type' class='fnname'>body_type</a>(&amp;self) -&gt; <a class='enum' href='../../../../wrapped2d/dynamics/body/enum.BodyType.html' title='wrapped2d::dynamics::body::BodyType'>BodyType</a></code></span></h4>
+<h4 id='method.is_bullet' class='method'><span id='is_bullet.v' class='invisible'><code>fn <a href='#method.is_bullet' class='fnname'>is_bullet</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<h4 id='method.is_sleeping_allowed' class='method'><span id='is_sleeping_allowed.v' class='invisible'><code>fn <a href='#method.is_sleeping_allowed' class='fnname'>is_sleeping_allowed</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<h4 id='method.is_awake' class='method'><span id='is_awake.v' class='invisible'><code>fn <a href='#method.is_awake' class='fnname'>is_awake</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<h4 id='method.is_active' class='method'><span id='is_active.v' class='invisible'><code>fn <a href='#method.is_active' class='fnname'>is_active</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<h4 id='method.is_rotation_fixed' class='method'><span id='is_rotation_fixed.v' class='invisible'><code>fn <a href='#method.is_rotation_fixed' class='fnname'>is_rotation_fixed</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<h4 id='method.joints' class='method'><span id='joints.v' class='invisible'><code>fn <a href='#method.joints' class='fnname'>joints</a>(&amp;self) -&gt; <a class='struct' href='../../../../wrapped2d/dynamics/body/struct.JointIter.html' title='wrapped2d::dynamics::body::JointIter'>JointIter</a></code></span></h4>
+<h4 id='method.set_transform' class='method'><span id='set_transform.v' class='invisible'><code>fn <a href='#method.set_transform' class='fnname'>set_transform</a>(&amp;mut self, pos: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, angle: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>)</code></span></h4>
+<h4 id='method.set_linear_velocity' class='method'><span id='set_linear_velocity.v' class='invisible'><code>fn <a href='#method.set_linear_velocity' class='fnname'>set_linear_velocity</a>(&amp;mut self, v: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>)</code></span></h4>
+<h4 id='method.set_angular_velocity' class='method'><span id='set_angular_velocity.v' class='invisible'><code>fn <a href='#method.set_angular_velocity' class='fnname'>set_angular_velocity</a>(&amp;mut self, v: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>)</code></span></h4>
+<h4 id='method.apply_force' class='method'><span id='apply_force.v' class='invisible'><code>fn <a href='#method.apply_force' class='fnname'>apply_force</a>(&amp;mut self, force: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, point: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, wake: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.apply_force_to_center' class='method'><span id='apply_force_to_center.v' class='invisible'><code>fn <a href='#method.apply_force_to_center' class='fnname'>apply_force_to_center</a>(&amp;mut self, force: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, wake: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.apply_torque' class='method'><span id='apply_torque.v' class='invisible'><code>fn <a href='#method.apply_torque' class='fnname'>apply_torque</a>(&amp;mut self, torque: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>, wake: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.apply_linear_impulse' class='method'><span id='apply_linear_impulse.v' class='invisible'><code>fn <a href='#method.apply_linear_impulse' class='fnname'>apply_linear_impulse</a>(&amp;mut self, impulse: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, point: &amp;<a class='struct' href='../../../../wrapped2d/common/math/struct.Vec2.html' title='wrapped2d::common::math::Vec2'>Vec2</a>, wake: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.apply_angular_impulse' class='method'><span id='apply_angular_impulse.v' class='invisible'><code>fn <a href='#method.apply_angular_impulse' class='fnname'>apply_angular_impulse</a>(&amp;mut self, impulse: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>, wake: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.set_mass_data' class='method'><span id='set_mass_data.v' class='invisible'><code>fn <a href='#method.set_mass_data' class='fnname'>set_mass_data</a>(&amp;mut self, data: &amp;<a class='struct' href='../../../../wrapped2d/collision/shapes/struct.MassData.html' title='wrapped2d::collision::shapes::MassData'>MassData</a>)</code></span></h4>
+<h4 id='method.reset_mass_data' class='method'><span id='reset_mass_data.v' class='invisible'><code>fn <a href='#method.reset_mass_data' class='fnname'>reset_mass_data</a>(&amp;mut self)</code></span></h4>
+<h4 id='method.set_linear_damping' class='method'><span id='set_linear_damping.v' class='invisible'><code>fn <a href='#method.set_linear_damping' class='fnname'>set_linear_damping</a>(&amp;mut self, damping: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>)</code></span></h4>
+<h4 id='method.set_angular_damping' class='method'><span id='set_angular_damping.v' class='invisible'><code>fn <a href='#method.set_angular_damping' class='fnname'>set_angular_damping</a>(&amp;mut self, damping: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>)</code></span></h4>
+<h4 id='method.set_gravity_scale' class='method'><span id='set_gravity_scale.v' class='invisible'><code>fn <a href='#method.set_gravity_scale' class='fnname'>set_gravity_scale</a>(&amp;mut self, scale: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>)</code></span></h4>
+<h4 id='method.set_body_type' class='method'><span id='set_body_type.v' class='invisible'><code>fn <a href='#method.set_body_type' class='fnname'>set_body_type</a>(&amp;mut self, typ: <a class='enum' href='../../../../wrapped2d/dynamics/body/enum.BodyType.html' title='wrapped2d::dynamics::body::BodyType'>BodyType</a>)</code></span></h4>
+<h4 id='method.set_bullet' class='method'><span id='set_bullet.v' class='invisible'><code>fn <a href='#method.set_bullet' class='fnname'>set_bullet</a>(&amp;mut self, flag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.set_sleeping_allowed' class='method'><span id='set_sleeping_allowed.v' class='invisible'><code>fn <a href='#method.set_sleeping_allowed' class='fnname'>set_sleeping_allowed</a>(&amp;mut self, flag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.set_awake' class='method'><span id='set_awake.v' class='invisible'><code>fn <a href='#method.set_awake' class='fnname'>set_awake</a>(&amp;mut self, flag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.set_active' class='method'><span id='set_active.v' class='invisible'><code>fn <a href='#method.set_active' class='fnname'>set_active</a>(&amp;mut self, flag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.set_rotation_fixed' class='method'><span id='set_rotation_fixed.v' class='invisible'><code>fn <a href='#method.set_rotation_fixed' class='fnname'>set_rotation_fixed</a>(&amp;mut self, flag: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<h4 id='method.dump' class='method'><span id='dump.v' class='invisible'><code>fn <a href='#method.dump' class='fnname'>dump</a>(&amp;mut self)</code></span></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, U:&nbsp;<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>UserDataTypes</a>&gt; <a class='trait' href='../../../../wrapped2d/user_data/trait.UserData.html' title='wrapped2d::user_data::UserData'>UserData</a>&lt;U::<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>BodyData</a>&gt; for <a class='struct' href='../../../../wrapped2d/dynamics/world/callbacks/struct.BodyAccess.html' title='wrapped2d::dynamics::world::callbacks::BodyAccess'>BodyAccess</a>&lt;'a, U&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../src/wrapped2d/dynamics/world_callbacks.rs.html#236-252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.user_data' class='method'><span id='user_data.v' class='invisible'><code>fn <a href='../../../../wrapped2d/user_data/trait.UserData.html#tymethod.user_data' class='fnname'>user_data</a>(&amp;self) -&gt; &amp;U::<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>BodyData</a></code></span></h4>
+<h4 id='method.user_data_mut' class='method'><span id='user_data_mut.v' class='invisible'><code>fn <a href='../../../../wrapped2d/user_data/trait.UserData.html#tymethod.user_data_mut' class='fnname'>user_data_mut</a>(&amp;mut self) -&gt; &amp;mut U::<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>BodyData</a></code></span></h4>
+<h4 id='method.set_user_data' class='method'><span id='set_user_data.v' class='invisible'><code>fn <a href='../../../../wrapped2d/user_data/trait.UserData.html#method.set_user_data' class='fnname'>set_user_data</a>(&amp;mut self, v: U)</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;'a, U:&nbsp;<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>UserDataTypes</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html' title='core::ops::Deref'>Deref</a> for <a class='struct' href='../../../../wrapped2d/dynamics/world/callbacks/struct.BodyAccess.html' title='wrapped2d::dynamics::world::callbacks::BodyAccess'>BodyAccess</a>&lt;'a, U&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../src/wrapped2d/dynamics/world_callbacks.rs.html#254-260' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class='type'><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html#associatedtype.Target' class='type'>Target</a> = <a class='struct' href='../../../../wrapped2d/dynamics/body/struct.Body.html' title='wrapped2d::dynamics::body::Body'>Body</a></code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing</p>
+</div><h4 id='method.deref' class='method'><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>(&amp;self) -&gt; &amp;<a class='struct' href='../../../../wrapped2d/dynamics/body/struct.Body.html' title='wrapped2d::dynamics::body::Body'>Body</a></code></span></h4>
+<div class='docblock'><p>The method called to dereference a value</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;'a, U:&nbsp;<a class='trait' href='../../../../wrapped2d/user_data/trait.UserDataTypes.html' title='wrapped2d::user_data::UserDataTypes'>UserDataTypes</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.DerefMut.html' title='core::ops::DerefMut'>DerefMut</a> for <a class='struct' href='../../../../wrapped2d/dynamics/world/callbacks/struct.BodyAccess.html' title='wrapped2d::dynamics::world::callbacks::BodyAccess'>BodyAccess</a>&lt;'a, U&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../src/wrapped2d/dynamics/world_callbacks.rs.html#262-266' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.deref_mut' class='method'><span id='deref_mut.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.DerefMut.html#tymethod.deref_mut' class='fnname'>deref_mut</a>(&amp;mut self) -&gt; &amp;mut <a class='struct' href='../../../../wrapped2d/dynamics/body/struct.Body.html' title='wrapped2d::dynamics::body::Body'>Body</a></code></span></h4>
+<div class='docblock'><p>The method called to mutably dereference a value</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../";
+        window.currentCrate = "wrapped2d";
+    </script>
+    <script src="../../../../jquery.js"></script>
+    <script src="../../../../main.js"></script>
+    <script defer src="../../../../search-index.js"></script>
+</body>
+</html>
